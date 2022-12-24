@@ -1,0 +1,20 @@
+{
+  "name": "cayde-6",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --build --verbose",
+    "start": "pnpm run compile; TS_NODE_BASEURL=./dist node -r tsconfig-paths/register dist/cayde.js"
+  },
+  "author": "BraveeSnow",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "discord.js": "^14.7.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "tsconfig-paths": "^4.1.1",
+    "typescript": "^4.9.4"
+  }
+}
