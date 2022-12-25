@@ -22,3 +22,7 @@ export function log(msg: string, level: Severity = Severity.INFO) {
             break;
     }
 }
+
+export function logError(msg: string) {
+    log(msg, Severity.ERROR);
+}
